@@ -14,3 +14,12 @@ jobs:
         env:
             GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+              -Dsonar.organization=rekhugopal
+              -Dsonar.projectKey=rekhugopal
+              -Dsonar.python.coverage.reportPaths=coverage.xml
+              -Dsonar.sources=lib/
+              -Dsonar.test.exclusions=tests/**
+              -Dsonar.tests=tests/
+              -Dsonar.verbose=true
