@@ -19,7 +19,3 @@ jobs:
               -Dsonar.organization=rekhugopal
               -Dsonar.projectKey=rekhugopal
               -Dsonar.python.coverage.reportPaths=coverage.xml
-              -Dsonar.sources=lib/
-              -Dsonar.test.exclusions=tests/**
-              -Dsonar.tests=tests/
-              -Dsonar.verbose=true
